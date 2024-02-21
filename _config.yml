@@ -1,2 +1,7 @@
 # Avoid GitHub API authentication when building locally.
 github: [metadata]
+
+plugins:
+  - rss
+  - safe_yaml
+  - jekyll-import
