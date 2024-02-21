@@ -1,9 +1,12 @@
-source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
-gem "webrick", "~> 1.7"
+source "https://rubygems.org"
+
+gem "jekyll"
+gem "kramdown-parser-gfm"
+gem "webrick"
+gem "rss"
 
 group :jekyll_plugins do
-    gem "rss"
-    gem "safe_yaml"
-    gem "jekyll-import"
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-import", git: "https://github.com/jekyll/jekyll-import"
 end
