@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.data.metadata.lang | default: 'en' }}" color-mode="user">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        {{ page.title }}
+    </title>
+    <meta name="description"
+        content="{{ site.data.metadata.description | default: 'Free, easy, low-tech website template using GitHub Pages' }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" sizes="any" />
+
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css" />
+</head>
+
+<body class="{% if page.body-style %}{{ page.body-style }}{% else %}p-3{% endif %}">
+    <main style="max-width: 80ch">
+        <small><a href="{{ site.baseurl }}/">Home</a></small>
+        <h1>{{ page.title }}</h1>
+        <!-- <img src="{{ site.baseurl }}/assets/img/mfm-cover.jpeg" width="240"
+      style="float: left; margin-inline-end: 0.5em; margin-block-end: 1em" /> -->
+
+        <div>{{ page.tag }}</div>
+        <div><small>{{ page.date | date_to_string }}</small></div>
+        <hr>
+        <article>
+            {{ page.content }}
+        </article>
+
+    </main>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -11,3 +11,7 @@
     --color-link: #70b8ff;
   }
 }
+
+audio {
+  width: 100%;
+}
