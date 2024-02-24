@@ -1,1 +1,13 @@
 /* Add CSS rules to override Primer */
+
+:root {
+  --color-accent: #0d74ce;
+  --color-link: #0d74ce;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[color-mode="user"] {
+    --color-accent: #70b8ff;
+    --color-link: #70b8ff;
+  }
+}
