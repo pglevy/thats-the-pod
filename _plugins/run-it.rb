@@ -1,8 +1,15 @@
-require "jekyll-import";
+require "jekyll-import"
+    
     JekyllImport::Importers::RSS.run({
-        "source" => "https://api.substack.com/feed/podcast/1707634.rss",
-        # "tag" => "guid",
-        "extract_tags" => "item",
+        "source" => "https://designbetterpodcast.com/feed",
+        "tag" => "Design Better",
+        "canonical_link" => true,
+        "render_audio" => true
+    })
+
+    JekyllImport::Importers::RSS.run({
+        "source" => "https://feeds.simplecast.com/3hnxp7yk",
+        "tag" => "Founders",
         "canonical_link" => true,
         "render_audio" => true
     })

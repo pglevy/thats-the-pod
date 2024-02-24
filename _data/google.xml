@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<opml version="1.0">
+    <head>
+        <title>Google Podcasts Feeds</title>
+    </head>
+    <body>
+        <outline text="feeds">
+            <outline xmlUrl="https://designbetterpodcast.com/feed" type="rss" text="Design Better" />
+            <outline xmlUrl="https://api.substack.com/feed/podcast/1707634.rss" type="rss"
+                text="Designer Sketches" />
+            <outline
+                xmlUrl="https://api.substack.com/feed/podcast/1194512/private/f13d31f9-02cb-4da8-8441-7b808d9da1d6.rss"
+                type="rss" text="Philosophy and Classics (private feed for philip.levy@hey.com)" />
+            <outline xmlUrl="https://feeds.transistor.fm/acquired" type="rss" text="Acquired" />
+            <outline xmlUrl="https://feeds.simplecast.com/azy33G8_" type="rss"
+                text="The Art of Manliness" />
+            <outline xmlUrl="https://feeds.simplecast.com/vsy1m5LV" type="rss"
+                text="The Jordan B. Peterson Podcast" />
+            <outline xmlUrl="https://findingourway.design/category/podcast/feed/" type="rss"
+                text="Finding Our Way" />
+            <outline xmlUrl="https://feeds.simplecast.com/3hnxp7yk" type="rss" text="Founders" />
+            <outline xmlUrl="https://feeds.buzzsprout.com/2260539.rss" type="rss" text="REWORK" />
+            <outline xmlUrl="https://feeds.npr.org/510313/podcast.xml" type="rss"
+                text="How I Built This with Guy Raz" />
+            <outline xmlUrl="https://feeds.megaphone.fm/foreveremployable" type="rss"
+                text="Forever Employable Stories" />
+            <outline xmlUrl="https://feeds.megaphone.fm/HS2300184645" type="rss"
+                text="My First Million" />
+            <outline xmlUrl="https://feed.podbean.com/bogleheads/feed.xml" type="rss"
+                text="Bogleheads On Investing Podcast" />
+            <outline xmlUrl="https://feeds.simplecast.com/5SEwkJYi" type="rss" text="The Long View" />
+        </outline>
+    </body>
+</opml>
