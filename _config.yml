@@ -8,3 +8,5 @@ plugins:
   # - import-rss
 
 safe: false
+
+baseurl: https://pglevy.github.io/thats-the-pod/
