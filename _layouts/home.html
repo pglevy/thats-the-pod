@@ -19,7 +19,7 @@
 <body class="{% if page.body-style %}{{ page.body-style }}{% else %}p-3{% endif %}">
   <main style="max-width: 80ch">
     <h1>That’s the Pod</h1>
-    {% for post in site.posts limit: 30 %}
+    {% for post in site.posts limit: 50 %}
     <article>
       <h2>
         <a href="{{ post.url }}">{{ post.title }}</a>
