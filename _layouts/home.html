@@ -13,7 +13,7 @@
   <link rel="icon" href="favicon.ico" sizes="any" />
 
   <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css" />
 </head>
 
 <body class="{% if page.body-style %}{{ page.body-style }}{% else %}p-3{% endif %}">
@@ -22,7 +22,7 @@
     {% for post in site.posts limit: 50 %}
     <article>
       <h2>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
       </h2>
 
       <!-- <img src="{{ site.baseurl }}/assets/img/mfm-cover.jpeg" width="120"
@@ -39,7 +39,7 @@
     <hr />
     {% endfor %}
   </main>
-  <script src="assets/js/main.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </body>
 
 </html>
