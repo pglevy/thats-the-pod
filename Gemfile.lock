@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/jekyll/jekyll-import
-  revision: 02744da4d29d1eb8961cf6805f8e800e11536600
+  revision: 8cac04b5784e6fb7b1727817577c5ae6e3632820
+  tag: v0.24.0
   specs:
     jekyll-import (0.24.0)
       jekyll (>= 3.7, < 5.0)
