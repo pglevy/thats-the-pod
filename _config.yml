@@ -4,8 +4,8 @@ github: [metadata]
 plugins:
   - rss
   - safe_yaml
-  # - jekyll-import
+  - jekyll-import
 
-safe: true
+safe: false
 
 baseurl: /thats-the-pod

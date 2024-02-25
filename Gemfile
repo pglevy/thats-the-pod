@@ -8,5 +8,5 @@ gem "rss"
 gem "safe_yaml"
 
 group :jekyll_plugins do
-  # gem "jekyll-import", git: "https://github.com/jekyll/jekyll-import", tag: "v0.24.0"
+  gem "jekyll-import", git: "https://github.com/jekyll/jekyll-import", tag: "v0.24.0"
 end
