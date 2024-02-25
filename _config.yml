@@ -2,9 +2,9 @@
 github: [metadata]
 
 plugins:
-  # - rss
-  # - safe_yaml
-  # - jekyll-import
+  - rss
+  - safe_yaml
+  - jekyll-import
   # - import-rss
 
 safe: false
