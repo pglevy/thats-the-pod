@@ -1,4 +1,5 @@
 require "jekyll-import"
+require "open-uri"
     
 module MyFeedImporter
   class MyFeedGenerator < Jekyll::Generator
