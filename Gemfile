@@ -8,6 +8,5 @@ gem "rss"
 gem "safe_yaml"
 
 group :jekyll_plugins do
-  gem "jekyll-feed"
   # gem "jekyll-import", git: "https://github.com/jekyll/jekyll-import", tag: "v0.24.0"
 end
