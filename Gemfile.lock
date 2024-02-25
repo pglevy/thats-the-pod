@@ -74,6 +74,7 @@ DEPENDENCIES
   jekyll-feed
   kramdown-parser-gfm
   rss
+  safe_yaml
   webrick
 
 BUNDLED WITH
