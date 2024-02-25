@@ -7,6 +7,5 @@ gem "rss"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem "jekyll-import", git: "https://github.com/jekyll/jekyll-import", tag: "v0.24.0"
+  # gem "jekyll-import", git: "https://github.com/jekyll/jekyll-import", tag: "v0.24.0"
 end
