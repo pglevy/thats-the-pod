@@ -9,4 +9,4 @@ plugins:
 
 safe: true
 
-baseurl: https://pglevy.github.io/thats-the-pod
+baseurl: /thats-the-pod
