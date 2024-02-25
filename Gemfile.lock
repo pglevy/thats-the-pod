@@ -15,6 +15,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
+    date (3.3.4)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -58,6 +59,10 @@ GEM
     nokogiri (1.16.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
+    open-uri (0.4.1)
+      stringio
+      time
+      uri
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.0.4)
@@ -76,9 +81,13 @@ GEM
     sass-embedded (1.71.1)
       google-protobuf (~> 3.25)
       rake (>= 13.0.0)
+    stringio (3.1.0)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
+    time (0.3.0)
+      date
     unicode-display_width (2.5.0)
+    uri (0.13.0)
     webrick (1.8.1)
 
 PLATFORMS
@@ -88,6 +97,7 @@ DEPENDENCIES
   jekyll (~> 4.3.3)
   jekyll-import!
   kramdown-parser-gfm
+  open-uri
   rss
   safe_yaml
   webrick
