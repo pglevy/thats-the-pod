@@ -7,6 +7,6 @@ plugins:
   # - jekyll-import
   # - import-rss
 
-safe: false
+safe: true
 
 baseurl: https://pglevy.github.io/thats-the-pod
