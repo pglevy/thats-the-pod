@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pglevy/jekyll-import
-  revision: 73ec772a5c37d39ced9d12b9784d60e6a70c0b28
+  revision: ade0714c8e873a2257221b3ba1a7ea7bd69ec99a
   branch: podcast
   specs:
     jekyll-import (0.24.0)
