@@ -9,27 +9,27 @@
     <meta name="description"
         content="{{ site.data.metadata.description | default: 'Free, easy, low-tech website template using GitHub Pages' }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico" sizes="any" />
-
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css" />
 </head>
 
-<body class="{% if page.body-style %}{{ page.body-style }}{% else %}p-3{% endif %}">
-    <main style="max-width: 80ch">
-        <small><a href="{{ site.baseurl }}/">Home</a></small>
-        <h1>{{ page.title }}</h1>
-        <!-- <img src="{{ site.baseurl }}/assets/img/mfm-cover.jpeg" width="240"
-      style="float: left; margin-inline-end: 0.5em; margin-block-end: 1em" /> -->
-
-        <div><a href="{{ page.canonical_url}}" target="_blank">{{ page.tag }}</a></div>
-        <div><small>{{ page.date | date_to_string }}</small></div>
-        <hr>
+<body>
+    <main>
+        <hgroup>
+            <h1>{{ page.title }}</h1>
+            <small><a href="{{ site.baseurl }}/">Back</a></small>
+        </hgroup>
         <article>
+            <header style="display: flex;">
+                <img src="{{ site.baseurl }}/assets/img/mfm-cover.jpeg" width="120" style="margin-inline-end: 0.5em;" />
+                <div>{% if page.canonical_url %}<a href="{{ page.canonical_url }}" target="_blank">{{ page.tag }}</a>{%
+                    else %}{{ page.tag }}{% endif %}<br>
+                    <small>{{ page.date | date_to_string }}</small>
+                </div>
+            </header>
             {{ page.content }}
         </article>
-
     </main>
     <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </body>
