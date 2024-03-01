@@ -9,12 +9,14 @@ const thisPost = article.getAttribute("id");
 console.log (thisPost);
 const thisAudio = document.querySelector('[src="thisAudioSource"]');
 console.log (thisAudio);
+const button = document.getElementById('mark-as-played');
+var intervalId;
 
 function getCurrentTime() {
     var currentTimeInSeconds = localStorage.getItem(thisPost);
     audio.currentTime = currentTimeInSeconds;
     console.log("I got current time: " + currentTimeInSeconds)
-}
+};
 
 function setCurrentTime() {
     var currentTimeInSeconds = Math.floor(audio.currentTime);
@@ -24,13 +26,23 @@ function setCurrentTime() {
     // console.log(audio.currentSrc);
 }
 
-getCurrentTime()
+audio.onloadedmetadata = (event) => {
+    getCurrentTime();
+};
 
 audio.onplay = (event) => {
     // Set up the interval (10 seconds = 10000 milliseconds)
-    const intervalTime = 5000;
-    const intervalId = setInterval(setCurrentTime, intervalTime);
-}
+    var intervalTime = 5000;
+    intervalId = setInterval(setCurrentTime, intervalTime);
+};
 
-// To stop the interval (if needed):
-// clearInterval(intervalId);
+audio.onpause = (event) => {
+    clearInterval(intervalId);
+};
+
+button.addEventListener('click', function() {
+    localStorage.removeItem(thisPost);
+    audio.currentTime = 0;
+    // To stop the interval (if needed):
+    clearInterval(intervalId);
+});
