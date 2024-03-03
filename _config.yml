@@ -11,4 +11,4 @@ safe: false
 
 baseurl: /thats-the-pod
 
-exclude: ["_posts"]
+# exclude: ["_posts"]
