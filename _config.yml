@@ -10,3 +10,5 @@ plugins:
 safe: false
 
 baseurl: /thats-the-pod
+
+exclude: ["_posts"]
