@@ -22,7 +22,8 @@
         </hgroup>
         <article id="{{ page.slug }}">
             <header style="display: flex;">
-                <img src="{{ site.baseurl }}/assets/img/mfm-cover.jpeg" width="120" style="margin-inline-end: 0.5em;">
+                <img src="{{ page.channel_image | default: site.baseurl | append: '/assets/img/placeholder.jpg' }}"
+                    alt="podcast cover" width="120" style="margin-inline-end: 0.5em;">
                 <div>{% if page.canonical_url %}<a href="{{ page.canonical_url }}" target="_blank">{{ page.tag }}</a>{%
                     else %}{{ page.tag }}{% endif %}<br>
                     <small>{{ page.date | date_to_string }}</small><br>
