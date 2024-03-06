@@ -28,7 +28,8 @@
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </h2>
       <section style="display: flex;">
-        <img src="{{ post.channel_image | default: site.baseurl | append: '/assets/img/placeholder.jpg' }}"
+        <img
+          src="{% if post.channel_image %}{{ post.channel_image }}{% else %}{{ site.baseurl | append: '/assets/img/placeholder.jpg' }}{% endif %}"
           alt="podcast cover" width="120" style="margin-inline-end: 0.5em;" />
         <div>{{ post.tag }}<br>
           <small>{{ post.date | date_to_string }}</small>
