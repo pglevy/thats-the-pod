@@ -11,8 +11,8 @@ on:
   # push:
   #   branches: ["main"]
   # Also on a schedule
-  schedule:
-    - cron: '*/5 * * * *'
+  # schedule:
+  #   - cron: '*/5 * * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
