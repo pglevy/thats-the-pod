@@ -66,3 +66,11 @@ button.addEventListener('change', (event) => {
         markUnplayed();
     };   
 });
+
+audio.addEventListener('ended', function() {
+    console.log('Audio playback has ended');
+    localStorage.removeItem(post);
+    stopSavingTime(intervalId);
+    markPlayed();
+    button.checked = true;
+});
